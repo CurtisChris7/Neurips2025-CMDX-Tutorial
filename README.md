@@ -53,20 +53,19 @@ Captures translation-invariant relationships and strengthens the model’s abili
 An architecture supporting directional bias and multi-head specialization over relative displacements.
 Designed for labeling and token-level modeling tasks.
 
-6. Distance-Aware (DA) Encoding
+6. Huang-Style Attention-Modified Encoding
 
-A kernel-based approach where attention weights are modulated by continuous functions of distance.
-Supports richer inductive biases than fixed buckets—for example, Gaussian or polynomial decay.
+A series of four modified attention mechanisms derived from Shaw's work. 
 
-7. ALiBi (Attention Linear Bias)
+7. Distance-Aware (DA) Encoding
+
+A sinusoidal-based approach where attention weights are modulated by continuous functions of distance.
+
+8. ALiBi (Attention Linear Bias)
 
 A monotonic bias term ensuring strong extrapolation and inductive alignment for very long contexts.
 Lightweight, parameter-efficient, and widely used in long-context models.
 
-8. Huang-Style Attention-Modified Encoding
-
-A modified attention mechanism where positional information is integrated within the attention transformation rather than added to the input.
-Separates content × position interactions explicitly, illuminating the deeper structure of positional information flow.
 
 📚 Educational Philosophy
 
