@@ -81,7 +81,7 @@ Interchangeable modules for comparative evaluation
 
 Each method reflects its original conceptual purpose, helping researchers understand why each encoding behaves the way it does.
 
-⚠️ Disclaimer (Research-Grade Educational Reference)
+⚠️ Disclaimer (Educational Reference)
 
 This repository prioritizes clarity and faithfulness over optimization:
 
