@@ -1,11 +1,14 @@
 # Neurips2025-CMDX-Tutorial
 
 Positional Encoding: Past, Present, and Future
+
 Unified Implementations of Sinusoidal · Learned Absolute · Axial · Shaw · TENER · Distance-Aware · ALiBi · Huang
 
 This repository provides an education-oriented, mathematically faithful collection of positional encoding (PE) methods. Each implementation is written with an emphasis on mathematical clarity, transparent tensor operations, and conceptual fidelity to the original formulation.
 
 The goal is not to offer production-level efficiency, but to serve as a clear reference for students and researchers studying how positional information is represented, transformed, and integrated within self-attention.
+
+Specifically, this repo largely covers the methods discussed in the 2018-2021 era of Positional Encoding methods. We also inxlude Sinusoidal, and ALiBi for completeness.
 
 🚀 Motivation
 
