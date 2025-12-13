@@ -37,7 +37,7 @@ def test_huang_forward_pass_method4():
         num_heads=NUM_HEADS,
         max_relative_position=MAX_REL_POS,
         qkv_bias=True,
-        auto_regression=False,
+        causal_masking=False,
     ).to(device)
 
     model.eval()
@@ -61,7 +61,7 @@ def test_huang_forward_pass_method1():
         num_heads=NUM_HEADS,
         max_relative_position=MAX_REL_POS,
         qkv_bias=True,
-        auto_regression=False,
+        causal_masking=False,
     ).to(device)
 
     model.eval()
@@ -85,7 +85,7 @@ def test_huang_forward_pass_method2():
         num_heads=NUM_HEADS,
         max_relative_position=MAX_REL_POS,
         qkv_bias=True,
-        auto_regression=False,
+        causal_masking=False,
     ).to(device)
 
     model.eval()
@@ -109,7 +109,7 @@ def test_huang_forward_pass_method3():
         num_heads=NUM_HEADS,
         max_relative_position=MAX_REL_POS,
         qkv_bias=True,
-        auto_regression=False,
+        causal_masking=False,
     ).to(device)
 
     model.eval()
@@ -137,7 +137,7 @@ def _relative_effect_test(model_class, rel_attr_name, method_name):
         num_heads=NUM_HEADS,
         max_relative_position=MAX_REL_POS,
         qkv_bias=True,
-        auto_regression=False,
+        causal_masking=False,
     )
 
     model.eval()
@@ -207,7 +207,7 @@ def _relative_grad_test(model_class, rel_attr_name, method_name):
         num_heads=NUM_HEADS,
         max_relative_position=MAX_REL_POS,
         qkv_bias=True,
-        auto_regression=False,
+        causal_masking=False,
     )
 
     model.train()
@@ -291,7 +291,7 @@ def test_huang_method4_manual_ground_truth():
         num_heads=num_heads,
         max_relative_position=max_rel_pos,
         qkv_bias=True,
-        auto_regression=False,   # no mask for simplicity
+        causal_masking=False,   # no mask for simplicity
     )
 
     # --- Manual example input ---

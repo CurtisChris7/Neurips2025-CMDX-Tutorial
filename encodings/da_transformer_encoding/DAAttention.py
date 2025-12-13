@@ -21,7 +21,7 @@ import torch
 import torch.nn as nn
 
 class DAAttention(nn.Module):
-    def __init__(self, d_in, d_out, context_length, dropout, num_heads, qkv_bias=False, auto_regression=False):
+    def __init__(self, d_in, d_out, context_length, dropout, num_heads, qkv_bias=False, causal_masking=False):
         super().__init__()
         assert (d_out % num_heads == 0), "d_out must be divisible by num_heads"
 
@@ -35,7 +35,7 @@ class DAAttention(nn.Module):
         self.out_proj = nn.Linear(d_out, d_out)  # Linear layer to combine head outputs
         self.dropout = nn.Dropout(dropout)
 
-        self.auto_regression = auto_regression
+        self.causal_masking = causal_masking
         self.register_buffer(
             "mask",
             torch.triu(torch.ones(context_length, context_length),
@@ -82,7 +82,7 @@ class DAAttention(nn.Module):
         # Compute scaled dot-product attention (aka self-attention) with a causal mask
         attn_scores = torch.relu(queries @ keys.transpose(2, 3)) * R_hat
 
-        if self.auto_regression:
+        if self.causal_masking:
             # Original mask truncated to the number of tokens and converted to boolean
             mask_bool = self.mask.bool()[:num_tokens, :num_tokens]
             # Use the mask to fill attention scores
