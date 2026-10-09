@@ -107,7 +107,6 @@ Curtis, C., & Savage, S. (2025). *Positional Encoding: Past, Present, and Future
 
 - [Official NeurIPS tutorial page](https://neurips.cc/virtual/2025/loc/mexico-city/128797)
 - [Recorded tutorial presentations](https://slideslive.com/neurips-2025/tutorial-positional-encoding-past-present-and-future)
-- [Official tutorial slides](https://neurips.cc/media/neurips-2025/Slides/128797_UIlZCE0.pdf)
 
 ### BibTeX
 
