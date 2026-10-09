@@ -98,3 +98,26 @@ Industrial systems may use fused kernels, compressed representations, or algorit
 
 Author: Christopher Curtis
 Email: curtis.ch@northeastern.edu
+
+## Citation
+
+If you use the educational materials or implementations provided in this repository, please cite our NeurIPS 2025 tutorial:
+
+Curtis, C., & Savage, S. (2025). *Positional Encoding: Past, Present, and Future*. Tutorial presented at the 39th Conference on Neural Information Processing Systems (NeurIPS 2025), Mexico City, Mexico.
+
+- [Official NeurIPS tutorial page](https://neurips.cc/virtual/2025/loc/mexico-city/128797)
+- [Recorded tutorial presentations](https://slideslive.com/neurips-2025/tutorial-positional-encoding-past-present-and-future)
+- [Official tutorial slides](https://neurips.cc/media/neurips-2025/Slides/128797_UIlZCE0.pdf)
+
+### BibTeX
+
+```bibtex
+@misc{curtis2025positional,
+  title        = {Positional Encoding: Past, Present, and Future},
+  author       = {Curtis, Christopher and Savage, Saiph},
+  year         = {2025},
+  howpublished = {Tutorial presented at the 39th Conference on Neural Information Processing Systems (NeurIPS 2025), Mexico City},
+  url          = {https://neurips.cc/virtual/2025/loc/mexico-city/128797},
+  note         = {Tutorial materials and open-source implementations available at https://github.com/CurtisChris7/Neurips2025-CMDX-Tutorial}
+}
+```
